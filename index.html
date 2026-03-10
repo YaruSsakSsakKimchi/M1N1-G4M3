@@ -1,77 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Neon Text Generator</title>
-
-<style>
-body{
-    background:black;
-    font-family:Arial;
-    text-align:center;
-    color:white;
-}
-
-.title{
-    margin-top:50px;
-    font-size:40px;
-}
-
-.container{
-    margin-top:40px;
-}
-
-input{
-    padding:10px;
-    font-size:18px;
-    width:250px;
-}
-
-button{
-    padding:10px 20px;
-    font-size:18px;
-    margin-left:10px;
-    cursor:pointer;
-}
-
-#neonOutput{
-    margin-top:40px;
-    font-size:50px;
-    color:white;
-
-    text-shadow:
-    0 0 5px #fff,
-    0 0 10px #00ffff,
-    0 0 20px #00ffff,
-    0 0 40px #00ffff,
-    0 0 80px #00ffff;
-}
-</style>
-
+<title>Mini Game Page</title>
 </head>
 
-<body>
+<body style="background:black; color:white; text-align:center; font-family:Arial;">
 
-<h1 class="title">⚡ Neon Text Generator ⚡</h1>
+<h1>🎮 Mini Game Page</h1>
 
-<div class="container">
-<input type="text" id="textInput" placeholder="Type your text here...">
-<button onclick="generateNeon()">Generate</button>
-<h2 id="neonOutput">Your Neon Text</h2>
-</div>
+<hr>
 
-<script>
-function generateNeon(){
-let text = document.getElementById("textInput").value;
+<h2>🎯 Button Challenge</h2>
+<p>Click the correct button!</p>
 
-if(text === ""){
-    text = "Your Neon Text";
-}
+<button>Wrong</button>
+<button>Wrong</button>
+<button>Wrong</button>
+<button onclick="alert('🎉 You Win!')">Correct</button>
 
-document.getElementById("neonOutput").innerText = text;
-}
-</script>
+<hr>
+
+<h2>❓ Guess Game</h2>
+<p>Which box has the treasure?</p>
+
+<details>
+<summary>Box 1</summary>
+😢 Empty
+</details>
+
+<details>
+<summary>Box 2</summary>
+💎 Treasure!
+</details>
+
+<details>
+<summary>Box 3</summary>
+😢 Empty
+</details>
+
+<hr>
+
+<h2>😂 Random Result</h2>
+<p>Click to see your luck today</p>
+
+<button onclick="alert('🍀 Lucky Day!')">Check Luck</button>
+
+<br><br>
+
+<p>Made with HTML</p>
 
 </body>
 </html>
